@@ -1,0 +1,23 @@
+Video script for a 2-3 minute demo
+
+Opening slide / screen:
+Title: FocusFlow Study Planner
+Name: Luca Popp
+GitHub username: <YOUR GITHUB USERNAME>
+Hult section: <YOUR HULT SECTION>
+Date recorded: <DATE>
+
+Script:
+Hello, my name is Luca Popp, and this is my final project, FocusFlow Study Planner. My project is a Python command-line app that helps students organize assignments and decide what to work on first. I built it because students often have many deadlines at the same time, and a normal to-do list does not always show which task is most urgent.
+
+Here you can see my project folder. The main file is project.py, which contains the main function and the custom functions for creating tasks, calculating priority, sorting tasks, saving tasks, and building a daily plan. I also have test_project.py, which includes my pytest tests, requirements.txt, and README.md.
+
+Now I will run the program. The menu gives me five choices: add a task, view tasks, mark a task completed, build today's study plan, and save and exit. First, I will add a task. I enter the subject, the description, the due date, the difficulty, and the estimated hours. The program checks the input and then creates a task with a priority score.
+
+Next, I will view my tasks. The program sorts open tasks by priority, so the most important task appears first. The score is based on urgency, difficulty, and estimated hours. This was one of my main design choices because I did not want the app to sort only by due date.
+
+Now I will build today's study plan. I enter how many hours I have available, and the program chooses high-priority tasks that fit into that time. This makes the program more useful because it gives a realistic plan instead of only showing a long list.
+
+I also wrote tests with pytest. The tests check important functions such as normalize_subject, parse_due_date, calculate_priority, create_task, sort_tasks_by_priority, and build_daily_plan. These tests helped me confirm that invalid input is rejected and that urgent tasks receive higher priority.
+
+That is my project. FocusFlow Study Planner is simple, but it uses multiple functions, file storage with JSON, input validation, sorting logic, and automated tests. Thank you for watching.
